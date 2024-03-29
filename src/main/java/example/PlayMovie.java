@@ -1,5 +1,7 @@
 package example;
 
+import java.io.IOException;
+
 public class PlayMovie {
     private Movie movie;
 
@@ -7,7 +9,7 @@ public class PlayMovie {
         this.movie = movie;
     }
 
-    public void Player(){
+    public void Player() throws IOException {
         System.out.println(movie.getMovie() + " is being played");
     }
 }

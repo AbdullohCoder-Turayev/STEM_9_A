@@ -1,5 +1,7 @@
 package example;
 
+import java.io.IOException;
+
 public interface Movie {
-    String getMovie();
+    String getMovie() throws IOException;
 }
