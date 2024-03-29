@@ -15,10 +15,18 @@ public class springTest {
 //        testBean.getName();
 //        context.close();
 
-        Movie movie = context.getBean("actMovie", ActionMovie.class);
-
+        Movie movie = context.getBean("ficMovie", FictionMovie.class);
         PlayMovie playMovie = new PlayMovie(movie);
 
         playMovie.Player();
+
+        System.out.println(" ");
+
+        movie = context.getBean("actMovie", ActionMovie.class);
+        PlayMovie playMovie1 = new PlayMovie(movie);
+
+        playMovie1.Player();
+
+
     }
 }
