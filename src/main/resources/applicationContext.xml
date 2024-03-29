@@ -9,4 +9,10 @@
 <bean id="testBean" class="example.testBean">
     <constructor-arg value="Spring framework test"/>
 </bean>
+    <bean id="actMovie" class="example.ActionMovie">
+
+    </bean>
+    <bean id="ficMovie" class="example.FictionMovie">
+
+    </bean>
 </beans>

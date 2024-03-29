@@ -7,12 +7,18 @@ public class springTest {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         testBean tb = context.getBean("testBean", testBean.class);
 
-        System.out.println(tb.getName());
+//        System.out.println(tb.getName());
+//
+//        testBean testBean = new testBean("Abdulloh");
+//
+//        testBean.setName("Sarvar");
+//        testBean.getName();
+//        context.close();
 
-        testBean testBean = new testBean("Abdulloh");
+        Movie movie = context.getBean("actMovie", ActionMovie.class);
 
-        testBean.setName("Sarvar");
-        testBean.getName();
-        context.close();
+        PlayMovie playMovie = new PlayMovie(movie);
+
+        playMovie.Player();
     }
 }
