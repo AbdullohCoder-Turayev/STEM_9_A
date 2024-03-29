@@ -16,9 +16,9 @@ public class springTest {
 //        context.close();
 
         Movie movie = context.getBean("ficMovie", FictionMovie.class);
-        PlayMovie playMovie = new PlayMovie(movie);
+        PlayMovie playFictionMovie = new PlayMovie(movie);
 
-        playMovie.Player();
+        playFictionMovie.Player();
 
         System.out.println(" ");
 
@@ -27,6 +27,11 @@ public class springTest {
 
         playMovie1.Player();
 
+        System.out.println(" ");
 
+        movie = context.getBean("cartoons", Cartoons.class);
+        PlayMovie playMovie2 = new PlayMovie(movie);
+
+        playMovie2.Player();
     }
 }

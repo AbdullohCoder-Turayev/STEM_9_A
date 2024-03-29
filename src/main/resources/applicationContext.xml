@@ -15,4 +15,7 @@
     <bean id="ficMovie" class="example.FictionMovie">
 
     </bean>
+    <bean id="cartoons" class="example.Cartoons">
+
+    </bean>
 </beans>
